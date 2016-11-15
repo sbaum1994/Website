@@ -1,3 +1,6 @@
+const path = require('path');
+const webpack = require('webpack');
+
 function getEntrySources(sources) {
     if (process.env.NODE_ENV !== 'production') {
         sources.push('webpack-dev-server/client?http://localhost:8080');
@@ -15,22 +18,38 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 query: {
-                  presets: ['es2015', 'react']
+                  presets: ['es2015', 'react', 'airbnb']
                 }
             },
-            // {
-            //     test: /\.scss$/,
-            //     loaders: ['style', 'css', 'sass']
-            // }
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
+            },
+            { 
+                test: /\.css$/, 
+                loader: "style-loader!css-loader" 
+            }
         ]
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "Tether": "tether"
+        })
+    ],
+    resolve: {
+      root: [
+        path.resolve('./src')
+      ]
     },
     entry: {
         helloWorld: getEntrySources([
-            './src/js/helloworld.js'
+            './src/js/helloworld.jsx',
         ])
     },
     output: {

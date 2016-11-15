@@ -4,7 +4,10 @@
   "description": "shows records in a meaningful way using react and d3.js - client side",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint --ext .jsx, src; exit 0",
+    "chimp-watch": "./node_modules/.bin/chimp --watch",
+    "dev-server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors"
   },
   "author": "Stephanie Baum",
   "license": "MIT",
@@ -15,22 +18,37 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-register": "^6.18.0",
-    "chai": "^3.5.0",
+    "bootstrap": "^4.0.0-alpha.5",
     "cheerio": "^0.22.0",
+    "chimp": "^0.41.2",
     "css-loader": "^0.25.0",
     "enzyme": "^2.6.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-promise": "^3.4.0-0",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-standard": "^2.0.1",
     "jsdom": "^9.8.3",
-    "mocha": "^3.1.2",
-    "react-addons-test-utils": "^15.3.2",
-    "sass-loader": "^4.0.2",
     "node-sass": "^3.11.2",
+    "path": "^0.12.7",
+    "react-addons-test-utils": "^15.3.2",
+    "sanitize-filename": "^1.6.1",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "d3": "^4.3.0",
+    "d3-interpolate": "^1.1.3",
+    "d3-scale-chromatic": "^1.1.0",
+    "jquery": "^3.1.1",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "tether": "^1.4.0"
   }
 }

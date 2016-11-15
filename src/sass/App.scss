@@ -1,0 +1,175 @@
+$color-blue: rgb(0, 145, 255);
+
+body {
+  font-size: 0.8em;
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(249, 249, 247);
+}
+
+.infotip { 
+  position: absolute; 
+  text-align: center; 
+  padding: 5px; 
+  font-size: 1em;
+  background: white;
+  border-radius: 3px; 
+  max-width: 250px;
+  pointer-events: none;
+}
+
+.header {
+  padding: 20px 20px 10px 20px;
+  .title {
+    text-align: center;
+    span.name {
+      font-weight: bold;
+      color: $color-blue;
+    }
+  }
+}
+
+.mid {
+  .graph-col {
+    text-align: center;
+    margin-left: 28px;
+  }
+
+  .graph-container {
+    display: inline-block;
+    width: 75%;
+    background-color: none;
+
+    svg {
+      display: block;
+      width: 100%;
+
+      text {
+        fill: #333;
+      }
+
+      path {
+        stroke: rgb(249, 249, 247);
+        stroke-width: 0.5;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .center-text {
+        font-size: 1em;
+      }
+
+      .center-main-text {
+        font-size: 2em;
+      }
+
+      .bottom-button-label {
+        font-size: .9em;
+        &:hover {
+         cursor: pointer;
+        }
+      }
+
+      .bottom-button, .info-button {
+        font-size: .9em;
+        font-family: FontAwesome;
+        &:hover {
+          cursor: pointer;
+          fill: $color-blue;
+        }
+      }
+
+      .info-button {
+        font-size: 1em;
+      }
+
+      g.legend rect:hover {
+        cursor: pointer;
+      }
+
+      g.legend rect {
+        fill-opacity: 0.5;
+        stroke: none;
+        
+        &.active {
+          stroke: #333;
+          stroke-width: 0.5;
+          fill-opacity: 1;
+        }
+      }
+
+      g.legend text {
+        opacity: 0.5;
+        &.active {
+          opacity: 1;
+        }
+      }
+
+      g.legend text {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 25px 20px 20px 20px;
+  .icons {
+    text-align: center;
+    display: inline-block;
+
+    span {
+      text-align:left;
+      font-size: 1.6em;
+      color: #333;
+      line-height: 14px;
+      padding: 5px;
+      display: inline-block;
+
+      span {
+        -webkit-transition: width 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out;
+        -o-transition: width 1s ease-in-out;
+        transition: width 1s ease-in-out;
+        width:0px;
+        padding: 0px;
+        margin-left: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        font-size: 0.6em;
+        vertical-align: middle;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      &:hover {
+        color: $color-blue;
+        cursor: pointer;
+
+        span {
+          -webkit-transition: width 1s ease-in-out;
+          -moz-transition: width 1s ease-in-out;
+          -o-transition: width 1s ease-in-out;
+          transition: width 1s ease-in-out;
+
+          &:hover {
+            color: #333;
+          }
+
+          &.phone-info {
+            width: 135px;
+          }
+
+          &.email-info {
+            width: 180px;
+          }
+
+          &.resume-info {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+}

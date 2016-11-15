@@ -1,0 +1,70 @@
+{ "trait": "Stephanie",
+  "children": [
+    {
+      "trait": "Designer",
+      "count": 50,
+      "children": [
+        {
+          "trait": "Artsy",
+          "index": 0,
+          "count": 30
+        },
+        {
+          "trait": "Thoughtful",
+          "index": 1,
+          "count": 20
+        },
+        {
+          "trait": "Detail-Oriented",
+          "index": 2,
+          "count": 10
+        },
+        {
+          "trait": "Intuitive",
+          "count": 40,
+          "index": 3,
+          "children": [
+            {
+              "trait": "Good at figuring out what people want vs what they think they want...",
+              "index": 0,
+              "count": 50
+            },
+            {
+              "trait": "Good at convincing people of what they want when they don't know it...",
+              "index": 1,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trait": "Programmer",
+      "count": 50,
+      "children": [
+        {
+          "trait": "Fast-learner",
+          "count": 100,
+          "index": 0,
+          "children": [
+            {
+              "trait": "Gets obsessed with things",
+              "index": 0,
+              "count": 30
+            },
+            {
+              "trait": "Works really hard",
+              "index": 1,
+              "count": 60
+            },
+            {
+              "trait": "Easily exciteable",
+              "index": 2,
+              "count": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

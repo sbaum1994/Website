@@ -1,0 +1,100 @@
+{
+  "trait": "root",
+  "children": [
+    {
+      "trait": "Scala",
+      "children": [
+        { "trait": "Akka", "count": 40 },
+        { "trait": "AkkaHttp", "display": "Akka Http", "count": 35 },
+        { "trait": "Play", "count": 50 },
+        { "trait": "OtherScala", "display": "Other (Scala)", "children": [
+          { "trait": "Monix", "count": 9 },
+          { "trait": "Cats", "count": 20 },
+          { "trait": "Circe", "count": 15 },
+          { "trait": "ScalaTest", "count": 10 },
+          { "trait": "ScalaCheck", "count": 9}
+        ]}
+      ]
+    },
+    {
+      "trait": "Python",
+      "children": [
+        { "trait": "Flask", "count": 3 },
+        { "trait": "NLTKNLP", "display": "NLP & NLTK", "count": 5 },
+        { "trait": "Numpy", "count": 3 },
+        { "trait": "StateMachines", "display": "State Machines", "count": 2 },
+        { "trait": "MachineLearning", "display": "Machine Learning", "count": 2 }
+      ]
+    },
+    {
+      "trait": "OtherLanguages",
+      "display": "Other Languages",
+      "children": [
+        { "trait": "OCaml", "count": 1 },
+        { "trait": "Prolog", "count": 1 },
+        { "trait": "Lisp", "count": 1 },
+        { "trait": "C", "count": 5 },
+        { "trait": "Go", "count": 1 }
+      ]
+    },
+    {
+      "trait": "Other",
+      "children": [
+        { "trait": "Kafka", "count": 4 },
+        { "trait": "Cassandra", "count": 4 },
+        { "trait": "ElasticSearch", "count": 4 },
+        { "trait": "Docker", "count": 3 }
+      ]
+    },
+    {
+      "trait": "Javascript",
+      "children": [
+        { "trait": "ES6", "children": [
+          { "trait": "ReactJs", "count": 60 },
+          { "trait": "Flux", "count": 20 },
+          { "trait": "D3Js", "count": 60 }
+        ]},
+        {
+          "trait": "Typescript", "children": [
+            {"trait": "Angular2", "count": 10 }
+        ]},
+        {
+          "trait": "NodeJs",
+          "count": 20
+        },
+        {
+          "trait": "OtherJavascript",
+          "display": "Other (Javascript)",
+          "children": [
+            { "trait": "MomentJs", "count": 1 },
+            { "trait": "ImmutableJs", "count": 6 },
+            { "trait": "CucumberJs", "count": 6 },
+            { "trait": "Mocha", "count": 1 },
+            { "trait": "Chai", "count": 1 },
+            { "trait": "Sinon", "count": 1 },
+            { "trait": "WebdriverIO", "count": 2 },
+            { "trait": "Selenium", "count": 2 },
+            { "trait": "Express", "count": 2 },
+            { "trait": "Webpack", "count": 1 },
+            { "trait": "SocketIO", "count": 1 },
+            { "trait": "Coffeescript", "count": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "trait": "DevMethods",
+      "display": "Dev Methods",
+      "children": [
+        { "trait": "Agile",
+          "children": [
+            { "trait": "BDD", "count": 10 },
+            { "trait": "DDD", "count": 10 },
+            { "trait": "Jira", "count": 3 }
+          ]
+        },
+        { "trait": "Git", "count": 10 }
+      ]
+    }
+  ]
+}

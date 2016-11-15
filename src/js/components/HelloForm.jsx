@@ -1,6 +1,5 @@
-// require('../sass/HelloForm.scss');
 import React from 'react';
-import HelloSayer from './HelloSayer';
+import HelloSayer from './HelloSayer.jsx';
 
 class HelloForm extends React.Component {
 	constructor(props) {
@@ -8,15 +7,15 @@ class HelloForm extends React.Component {
 		this.state = { name: 'world' };
 	}
 
-	render() {
-		return (<div className="hello-form">
-			<input type="text" onChange={this.onChange.bind(this)} />
-			<HelloSayer name={this.state.name} />
-		</div>);
-	}
-
 	onChange(e) {
 		this.setState({ name: e.target.value });
+	}
+
+	render() {
+		return (<div className="hello-form">
+			<input name="hello-text" type="text" onChange={this.onChange.bind(this)} />
+			<HelloSayer name={this.state.name} />
+		</div>);
 	}
 }
 

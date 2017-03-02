@@ -3,3 +3,7 @@ node_modules
 .npm
 
 /public/*.js
+
+screenshots
+
+*.log

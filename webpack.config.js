@@ -48,8 +48,8 @@ module.exports = {
       ]
     },
     entry: {
-        helloWorld: getEntrySources([
-            './src/js/helloworld.jsx',
+        index: getEntrySources([
+            './src/js/index.jsx',
         ])
     },
     output: {

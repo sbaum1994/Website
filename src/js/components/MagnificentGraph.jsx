@@ -185,9 +185,6 @@ class MagnificentGraph extends React.Component {
       if (!parentNode) return "white";
     
       let scale = colorScale[parentNode.data.trait];
-      console.log(y(d.y0)); // 130 - 250
-      console.log(x((d.x0 + d.x1)/2)); // 0.5 -5.9
-      console.log(d.depth * (Math.sqrt(y(d.y0))/10 + x((d.x0+d.x1)/2)/2));
       // old d.depth * ((d.x0 + d.x1)/2 * d.y0)
       return scale(d.depth * (Math.sqrt(y(d.y0))/10 + x((d.x0+d.x1)/2)/2));
     }

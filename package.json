@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint --ext .jsx, src; exit 0",
     "chimp-watch": "./node_modules/.bin/chimp --watch",
+    "server": "node server",
+    "webpack": "./node_modules/webpack/bin/webpack.js",
     "dev-server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors"
   },
   "author": "Stephanie Baum",

@@ -28,7 +28,7 @@ class MagnificentGraph extends React.Component {
 
     let legendVals = [],
         total = 0,
-        currentMessage = "Remove/add top categories by clicking.";
+        currentMessage = "Toggle top categories by clicking.";
 
     const mediumPurple = d3.rgb('#806080'),
           darkPurple = d3.rgb('#404060'),
@@ -124,7 +124,7 @@ class MagnificentGraph extends React.Component {
 
     const bottomButton = svg.append('text')
       .attr("class", 'bottom-button')
-      .attr('x', legendPos.left + 40)
+      .attr('x', legendPos.left + 45)
       .attr('y', legendPos.top + 161)
       .attr('text-anchor', 'middle')
       .attr('alignment-baseline', 'central')
@@ -133,7 +133,7 @@ class MagnificentGraph extends React.Component {
 
     const infoButton = svg.append('text')
       .attr("class", 'info-button')
-      .attr('x', legendPos.left + 55)
+      .attr('x', legendPos.left + 65)
       .attr('y', legendPos.top + 161)
       .attr('text-anchor', 'middle')
       .attr('alignment-baseline', 'central')
@@ -185,7 +185,7 @@ class MagnificentGraph extends React.Component {
       if (!parentNode) return "white";
     
       let scale = colorScale[parentNode.data.trait];
-      // old d.depth * ((d.x0 + d.x1)/2 * d.y0)
+      // old by.depth * ((d.x0 + d.x1)/2 * d.y0)
       return scale(d.depth * (Math.sqrt(y(d.y0))/10 + x((d.x0+d.x1)/2)/2));
     }
 

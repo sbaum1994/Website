@@ -24,12 +24,12 @@ class App extends React.Component {
         </div>
         <div className="mid row">
           <div className="col-md-2"></div>
-          <div className="col-md-9 graph-col">
+          <div className="col-md-8 graph-col">
             <div className="graph-container">
               <MagnificentGraph dataset={this.props.dataset} />
             </div>
           </div>
-          <div className="col-md-1"></div>
+          <div className="col-md-2"></div>
         </div>
         <div className ="footer row">
           <div className="col-md-4"></div>

@@ -1,7 +1,7 @@
 $color-blue: rgb(0, 145, 255);
 
 body {
-  font-size: 0.8em;
+  font-size: 1em;
   color: #333;
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgb(249, 249, 247);
@@ -57,11 +57,11 @@ body {
       }
 
       .center-text {
-        font-size: 1em;
+        font-size: 0.8em;
       }
 
       .center-main-text {
-        font-size: 2em;
+        font-size: 1.8em;
       }
 
       .bottom-button-label {
@@ -72,16 +72,12 @@ body {
       }
 
       .bottom-button, .info-button {
-        font-size: .9em;
+        font-size: .8em;
         font-family: FontAwesome;
         &:hover {
           cursor: pointer;
           fill: $color-blue;
         }
-      }
-
-      .info-button {
-        font-size: 1em;
       }
 
       g.legend rect:hover {
@@ -101,20 +97,18 @@ body {
 
       g.legend text {
         opacity: 0.5;
+        font-size: 0.9em;
         &.active {
           opacity: 1;
         }
       }
 
-      g.legend text {
-        font-size: 1em;
-      }
     }
   }
 }
 
 .footer {
-  padding: 25px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   .icons {
     text-align: center;
     display: inline-block;

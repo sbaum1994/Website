@@ -6,10 +6,6 @@ class App extends React.Component {
     super(props);
   }
 
-  onResumeClick() {
-    console.log('download resume');
-  }
-
   render() {
     return(
       <div className="container-fluid">
@@ -36,7 +32,7 @@ class App extends React.Component {
           <div className="col-md-4 icons">
             <span className="fa fa-mobile-phone"><span className="phone-info">Mobile: 1-805-905-1963</span></span>
             <span className="fa fa-envelope"><span className="email-info">Email: sbaum1994@gmail.com</span></span>
-            <span onClick={this.onResumeClick} className="fa fa-file-text"><span className="resume-info">Click to download my resume.</span></span>
+            <a href="https://drive.google.com/file/d/0BxQw967oWD-fdmtyWTNBZVVnV1U/view?usp=sharing"><span className="fa fa-file-text"><span className="resume-info">Click to view my resume.</span></span></a>
             <a href="https://github.com/sbaum1994"><span className="fa fa-github"></span></a>
             <a href="https://www.linkedin.com/in/stephanie-baum-9a2a3b41"><span className="fa fa-linkedin"></span></a>
           </div>
